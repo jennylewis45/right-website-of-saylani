@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="green-heading">Get Started</h1>
+    <p class="blue-para">Online Market place</p>
+    <form action="#">
+      <input type="text" name="username" placeholder="Username" />
+      <img src="User name icon.png" alt="" />
+      <br />
+      <br />
+      <input type="text" name="Email" placeholder="Email" />
+      <img src="Email icon.png" alt="" />
+      <br />
+      <br />
+      <input type="text" name="password" placeholder="password" />
+      <img src="Password icon.png" alt="" />
+    </form>
+    <br />
+    <br />
+    <input type="radio" name="gender" value="male" />Sale
+    <input type="radio" name="gender" value="male" />Purchase <br /><br />
+    <button id="signinButton" class="green-button">Sign In</button>
+
+    <script src="index.js"></script>
+    <script>
+      // JavaScript code to handle the Next button click event
+      document.getElementById("signinButton").addEventListener("click", function() {
+        // Redirect to the Cart page
+        window.location.href = "category.html";
+      });
+    </script>
+  </body>
+</html>

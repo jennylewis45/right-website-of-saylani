@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* Container to align icon and text */
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px; /* Optional: Add padding for spacing */
+        background-color: #f0f0f0; /* Optional: Add background color to the container */
+      }
+      /* Styling for the icon */
+      .icon {
+        width: 50px; /* Set the width of the icon as needed */
+        height: 50px; /* Set the height of the icon as needed */
+        /* Optional: Add more styling (e.g., border, margin, etc.) as needed */
+      }
+      /* Styling for the text */
+      .text {
+        font-size: 20px; /* Set the font size of the text as needed */
+        /* Optional: Add more styling (e.g., color, font-weight, etc.) as needed */
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <div class="container">
+    <!-- Icon on the left -->
+    <img class="icon" src="line.png" alt="Icon">
+
+    <!-- Text on the right -->
+    <img src="Ellipse 4.png" alt="">
+  </div>
+ 
+  
+    <div class="shopping-cart">
+      <img src="" alt="">
+        <p class="blue-para">Shopping</p>
+        <h2>Cart</h2>
+       
+        <ul>
+          <li>
+            <img src="Rectangle 21.png" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$25.00</p>
+            <input type="number" value="1">
+          </li>
+          <li>
+            <img src="Rectangle 17.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$45.00</p>
+            <input type="number" value="1">
+          </li>
+          <li>
+            <img src="Rectangle 16.png" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>$35.00</p>
+            <input type="number" value="1">
+          </li>
+        </ul>
+        <p>Total: $105.00</p>
+        <img src="image 2.png" alt="">
+        <button id="nextButton" class="green-button">Next</button>
+
+        <script>
+          // JavaScript code to handle the Next button click event
+          document.getElementById("nextButton").addEventListener("click", function() {
+            // Redirect to the Cart page
+            window.location.href = "checkout.html";
+          });
+        </script>
+     
+    
+</body>
+</html>
+
+
+ 

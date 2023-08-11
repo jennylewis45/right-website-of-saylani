@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+   
+    <div class="container">
+        <img src="Vector.png" alt="Example Image">
+        <img src="Ellipse 4.png" alt="">
+        <span class="rio"> <b>Mr.Ahmed</b></span>
+        <br>
+        <span class="riio"><b>Sales</b></span>
+       
+    </div>
+    </div>
+   <br><br>
+    <span class="rio"> <b>Add new item</b></span>
+    <br>
+    <div style="text-align: center;">
+    <div class="outer-image">
+        <div class="inner-image"></div>
+    </div>
+    <h1>Image Upload</h1>
+    <input type="file" id="imageInput">
+    <button id="uploadButton">Upload</button>
+    <img id="uploadedImage" src="Rectangle 17.png" alt="Uploaded Image" style="display: none; max-width: 300px;">
+</div>
+
+  
+<br><br>   
+
+    <div class="input-container">
+        <label for="input1">Name:</label>
+        <input type="text" id="input1" placeholder="Enter value for Input 1">
+
+        <label for="input2">Qty:</label>
+        <input type="text" id="input2" placeholder="Enter value for Input 2">
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+    <select id="category">
+        <option value="Fruit">Fruit</option>
+        <option value="Vegetable">Vegetable</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Meat">Meat</option>
+      </select>
+    </div>
+      <br><br>
+
+      <div class="input-container">
+        <label for="input1">Description:</label>
+        <input type="text" id="input1" placeholder="Enter value for Input 1">
+
+        <label for="input2">Price:</label>
+        <input type="text" id="input2" placeholder="Enter value for Input 2">
+    </div>
+    <div style="text-align: center;">
+    <button id="submitbtn" class="green-button">Submit</button>
+</div>
+    <br><br>
+    <div style="text-align:center ;">
+    <img src="Group 2.png" alt="">
+    <img src="Group 3.png" alt="">
+    <img src="image 30.png" alt="">
+</div>
+
+<script>
+    // JavaScript code to handle the Next button click event
+    document.getElementById("submitbtn").addEventListener("click", function() {
+      // Redirect to the Cart page
+      window.location.href = "settings.html";
+    });
+   
+        const imageInput = document.getElementById('imageInput');
+        const uploadButton = document.getElementById('uploadButton');
+        const uploadedImage = document.getElementById('uploadedImage');
+
+        imageInput.addEventListener('change', function() {
+            const selectedImage = imageInput.files[0];
+            const imageURL = URL.createObjectURL(selectedImage);
+            uploadedImage.src = imageURL;
+            uploadedImage.style.display = 'block';
+        });
+
+        uploadButton.addEventListener('click', function() {
+            // Perform upload logic here (e.g., send image to server)
+            alert('Image uploaded successfully!');
+        });
+
+
+
+       
+      // JavaScript code to handle the Next button click event
+      document.getElementById("submitbtn").addEventListener("click", function() {
+        // Redirect to the Cart page
+        window.location.href = "salelogout.html";
+      });
+    
+
+
+  </script>
+
+
+   
+    
+</body>
+</html>
